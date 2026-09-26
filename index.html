@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Data Analytics Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #1f2937;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #6b7280;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .project-card h3 {
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .project-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .tools {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 7px;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px;
+            margin-top: 50px;
+            background: #111827;
+            color: #d1d5db;
+        }
+
+        @media (max-width: 900px) {
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Data Analytics Portfolio</h1>
+
+    <p>
+        Data Analyst | Business Intelligence |
+        SQL | Power BI | Tableau | Excel
+    </p>
+</header>
+
+<div class="container">
+
+    <div class="section-title">
+        <h2>Featured Projects</h2>
+
+        <p>
+            Interactive data analytics and business intelligence projects
+        </p>
+    </div>
+
+    <div class="projects">
+
+        <!-- Project 1 -->
+
+        <div class="project-card">
+
+            <h3>
+                Retail Inventory & Demand Forecasting
+            </h3>
+
+            <p>
+                Power BI project focused on inventory,
+                demand, sales performance and forecasting.
+            </p>
+
+            <div class="tools">
+                Power BI • SQL • Data Analysis
+            </div>
+
+            <a
+                href="projects/retail-inventory.html"
+                class="button">
+                View Interactive Project →
+            </a>
+
+        </div>
+
+
+        <!-- Project 2 -->
+
+        <div class="project-card">
+
+            <h3>
+                E-commerce Retail Sales Analytics
+            </h3>
+
+            <p>
+                E-commerce sales analysis using Excel,
+                Power Pivot and SQL.
+            </p>
+
+            <div class="tools">
+                Excel • Power Pivot • SQL
+            </div>
+
+            <a
+                href="projects/ecommerce-sales.html"
+                class="button">
+                View Interactive Project →
+            </a>
+
+        </div>
+
+
+        <!-- Project 3 -->
+
+        <div class="project-card">
+
+            <h3>
+                Customer Analytics & Retention
+            </h3>
+
+            <p>
+                Customer segmentation, churn and retention
+                analysis using Tableau and SQL.
+            </p>
+
+            <div class="tools">
+                Tableau • SQL • Customer Analytics
+            </div>
+
+            <a
+                href="projects/customer-analytics.html"
+                class="button">
+                View Interactive Project →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+    Data Analytics Portfolio
+
+</footer>
+
+</body>
+</html>
