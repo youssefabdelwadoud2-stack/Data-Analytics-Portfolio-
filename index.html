@@ -16,6 +16,10 @@
 
     <style>
 
+        /* =========================
+           GLOBAL
+        ========================= */
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -29,13 +33,9 @@
 
 
         body {
-
             font-family: Arial, sans-serif;
-
             background: #f5f7fa;
-
             color: #1f2937;
-
             line-height: 1.6;
         }
 
@@ -45,69 +45,48 @@
         ========================= */
 
         nav {
-
             background: #111827;
-
             padding: 18px 30px;
-
             position: sticky;
-
             top: 0;
-
             z-index: 1000;
         }
 
 
         .nav-container {
-
             max-width: 1200px;
-
             margin: auto;
 
             display: flex;
-
             justify-content: space-between;
-
             align-items: center;
         }
 
 
         .logo {
-
             color: white;
-
             font-size: 20px;
-
             font-weight: bold;
-
             text-decoration: none;
         }
 
 
         .nav-links {
-
             display: flex;
-
             gap: 25px;
-
             list-style: none;
         }
 
 
         .nav-links a {
-
             color: #d1d5db;
-
             text-decoration: none;
-
             font-size: 15px;
-
             transition: color 0.2s;
         }
 
 
         .nav-links a:hover {
-
             color: white;
         }
 
@@ -117,53 +96,38 @@
         ========================= */
 
         header {
-
             background: #111827;
-
             color: white;
-
             padding: 80px 20px;
-
             text-align: center;
         }
 
 
         header h1 {
-
             font-size: 42px;
-
             margin-bottom: 12px;
         }
 
 
         header h2 {
-
             font-size: 30px;
-
             font-weight: 700;
-
             color: #d1d5db;
-
             margin-bottom: 15px;
         }
 
 
         header p {
-
             font-size: 18px;
-
             color: #d1d5db;
-
             margin-bottom: 25px;
         }
 
 
         .hero-button {
-
             display: inline-block;
 
             background: #2563eb;
-
             color: white;
 
             text-decoration: none;
@@ -173,11 +137,12 @@
             border-radius: 7px;
 
             font-weight: bold;
+
+            transition: background 0.2s;
         }
 
 
         .hero-button:hover {
-
             background: #1d4ed8;
         }
 
@@ -187,11 +152,8 @@
         ========================= */
 
         .container {
-
             max-width: 1200px;
-
             margin: 55px auto;
-
             padding: 0 20px;
         }
 
@@ -201,23 +163,18 @@
         ========================= */
 
         .section-title {
-
             text-align: center;
-
             margin-bottom: 35px;
         }
 
 
         .section-title h2 {
-
             font-size: 30px;
-
             margin-bottom: 10px;
         }
 
 
         .section-title p {
-
             color: #6b7280;
         }
 
@@ -227,10 +184,10 @@
         ========================= */
 
         .projects {
-
             display: grid;
 
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns:
+                repeat(3, 1fr);
 
             gap: 25px;
         }
@@ -241,7 +198,6 @@
         ========================= */
 
         .project-card {
-
             background: white;
 
             border-radius: 12px;
@@ -249,7 +205,7 @@
             overflow: hidden;
 
             box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
+                0 5px 20px rgba(0, 0, 0, 0.08);
 
             transition:
                 transform 0.2s,
@@ -258,11 +214,10 @@
 
 
         .project-card:hover {
-
             transform: translateY(-5px);
 
             box-shadow:
-                0 10px 30px rgba(0,0,0,0.12);
+                0 10px 30px rgba(0, 0, 0, 0.12);
         }
 
 
@@ -271,7 +226,6 @@
         ========================= */
 
         .project-image {
-
             width: 100%;
 
             height: 210px;
@@ -279,25 +233,30 @@
             object-fit: cover;
 
             display: block;
+
+            background: #e5e7eb;
         }
 
 
-        .project-content {
+        /* =========================
+           PROJECT CONTENT
+        ========================= */
 
+        .project-content {
             padding: 25px;
         }
 
 
         .project-card h3 {
-
             margin-bottom: 12px;
 
             font-size: 21px;
+
+            line-height: 1.4;
         }
 
 
         .project-card p {
-
             color: #6b7280;
 
             line-height: 1.6;
@@ -307,7 +266,6 @@
 
 
         .tools {
-
             font-size: 14px;
 
             font-weight: bold;
@@ -319,11 +277,10 @@
 
 
         /* =========================
-           BUTTONS
+           PROJECT BUTTONS
         ========================= */
 
         .buttons {
-
             display: flex;
 
             flex-wrap: wrap;
@@ -333,7 +290,6 @@
 
 
         .button {
-
             display: inline-block;
 
             text-decoration: none;
@@ -349,23 +305,22 @@
             font-size: 13px;
 
             font-weight: bold;
+
+            transition: background 0.2s;
         }
 
 
         .button:hover {
-
             background: #1d4ed8;
         }
 
 
         .github-button {
-
             background: #374151;
         }
 
 
         .github-button:hover {
-
             background: #1f2937;
         }
 
@@ -375,7 +330,6 @@
         ========================= */
 
         .about {
-
             background: white;
 
             border-radius: 12px;
@@ -385,12 +339,11 @@
             margin-top: 60px;
 
             box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
+                0 5px 20px rgba(0, 0, 0, 0.08);
         }
 
 
         .about h2 {
-
             margin-bottom: 15px;
 
             font-size: 28px;
@@ -398,7 +351,6 @@
 
 
         .about p {
-
             color: #6b7280;
 
             line-height: 1.8;
@@ -410,7 +362,6 @@
         ========================= */
 
         .contact {
-
             text-align: center;
 
             margin-top: 60px;
@@ -422,18 +373,16 @@
             border-radius: 12px;
 
             box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
+                0 5px 20px rgba(0, 0, 0, 0.08);
         }
 
 
         .contact h2 {
-
             margin-bottom: 12px;
         }
 
 
         .contact p {
-
             color: #6b7280;
 
             margin-bottom: 20px;
@@ -445,7 +394,6 @@
         ========================= */
 
         footer {
-
             text-align: center;
 
             padding: 35px;
@@ -455,11 +403,12 @@
             background: #111827;
 
             color: #d1d5db;
+
+            line-height: 2;
         }
 
 
         footer a {
-
             color: #93c5fd;
 
             text-decoration: none;
@@ -467,7 +416,6 @@
 
 
         footer a:hover {
-
             text-decoration: underline;
         }
 
@@ -479,8 +427,8 @@
         @media (max-width: 900px) {
 
             .projects {
-
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
 
         }
@@ -493,13 +441,11 @@
         @media (max-width: 600px) {
 
             nav {
-
                 padding: 15px;
             }
 
 
             .nav-container {
-
                 flex-direction: column;
 
                 gap: 12px;
@@ -507,7 +453,6 @@
 
 
             .nav-links {
-
                 gap: 15px;
 
                 flex-wrap: wrap;
@@ -517,32 +462,56 @@
 
 
             header {
-
                 padding: 60px 15px;
             }
 
 
             header h1 {
-
                 font-size: 32px;
             }
 
 
             header h2 {
-
                 font-size: 24px;
             }
 
 
-            .projects {
+            header p {
+                font-size: 16px;
+            }
 
+
+            .container {
+                margin: 40px auto;
+
+                padding: 0 15px;
+            }
+
+
+            .projects {
                 grid-template-columns: 1fr;
             }
 
 
             .project-image {
-
                 height: 220px;
+            }
+
+
+            .project-content {
+                padding: 20px;
+            }
+
+
+            .buttons {
+                flex-direction: column;
+            }
+
+
+            .button {
+                text-align: center;
+
+                width: 100%;
             }
 
         }
@@ -563,6 +532,7 @@
 
     <div class="nav-container">
 
+
         <a
             href="index.html"
             class="logo">
@@ -574,29 +544,42 @@
 
         <ul class="nav-links">
 
+
             <li>
+
                 <a href="#home">
                     Home
                 </a>
+
             </li>
 
+
             <li>
+
                 <a href="#projects">
                     Projects
                 </a>
+
             </li>
 
+
             <li>
+
                 <a href="#about">
                     About
                 </a>
+
             </li>
 
+
             <li>
+
                 <a href="#contact">
                     Contact
                 </a>
+
             </li>
+
 
         </ul>
 
@@ -605,23 +588,28 @@
 </nav>
 
 
+
 <!-- =========================
      HERO
 ========================= -->
 
 <header id="home">
 
+
     <h1>
         Youssef Abdelwadoud
     </h1>
+
 
     <h2>
         Data Analytics Portfolio
     </h2>
 
+
     <p>
         SQL | Power BI | Tableau | Excel
     </p>
+
 
     <a
         href="#projects"
@@ -631,238 +619,262 @@
 
     </a>
 
+
 </header>
 
 
+
 <!-- =========================
-     PROJECTS
+     MAIN
 ========================= -->
 
-<div
-    class="container"
-    id="projects">
+<div class="container">
 
 
-    <div class="section-title">
+    <!-- =========================
+         PROJECTS
+    ========================= -->
 
-        <h2>
-            Featured Projects
-        </h2>
-
-        <p>
-            Interactive Data Analytics Projects
-        </p>
-
-    </div>
+    <section id="projects">
 
 
-    <div class="projects">
+        <div class="section-title">
+
+            <h2>
+                Featured Projects
+            </h2>
 
 
-        <!-- =========================
-             PROJECT 1
-        ========================= -->
+            <p>
+                Interactive Data Analytics Projects
+            </p>
 
-        <div class="project-card">
-
-
-            <!--
-            IMPORTANT:
-            Replace the image URL later
-            with your actual screenshot.
-            -->
-
-            <img
-                class="project-image"
-                src="https://via.placeholder.com/800x450?text=Customer+Analytics"
-                alt="Customer Analytics Dashboard">
+        </div>
 
 
-            <div class="project-content">
 
-                <h3>
-                    Customer Analytics,
-                    Segmentation & Retention
-                </h3>
+        <div class="projects">
 
 
-                <p>
+            <!-- =========================
+                 PROJECT 1
+            ========================= -->
 
-                    Customer analytics project analyzing
-                    segmentation, churn, retention,
-                    customer value and engagement.
-
-                </p>
+            <div class="project-card">
 
 
-                <div class="tools">
-
-                    SQL Server • Tableau • Customer Analytics
-
-                </div>
-
-
-                <div class="buttons">
-
-                    <a
-                        href="projects/customer-analytics.html"
-                        class="button">
-
-                        Interactive Project →
-
-                    </a>
+                <img
+                    class="project-image"
+                    src="images/customer-analytics.png"
+                    alt="Customer Analytics Dashboard">
 
 
-                    <a
-                        href="YOUR-CUSTOMER-GITHUB-REPOSITORY"
-                        class="button github-button"
-                        target="_blank"
-                        rel="noopener">
+                <div class="project-content">
 
-                        GitHub
 
-                    </a>
+                    <h3>
+                        Customer Analytics,
+                        Segmentation & Retention
+                    </h3>
+
+
+                    <p>
+
+                        Customer analytics project analyzing
+                        segmentation, churn, retention,
+                        customer value and engagement.
+
+                    </p>
+
+
+                    <div class="tools">
+
+                        SQL Server • Tableau •
+                        Customer Analytics
+
+                    </div>
+
+
+                    <div class="buttons">
+
+
+                        <a
+                            href="projects/customer-analytics.html"
+                            class="button">
+
+                            Interactive Project →
+
+                        </a>
+
+
+                        <a
+                            href="YOUR-CUSTOMER-GITHUB-REPOSITORY"
+                            class="button github-button"
+                            target="_blank"
+                            rel="noopener">
+
+                            GitHub
+
+                        </a>
+
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
 
 
-        <!-- =========================
-             PROJECT 2
-        ========================= -->
+            <!-- =========================
+                 PROJECT 2
+            ========================= -->
 
-        <div class="project-card">
-
-
-            <img
-                class="project-image"
-                src="https://via.placeholder.com/800x450?text=E-Commerce+Sales"
-                alt="E-Commerce Sales Dashboard">
+            <div class="project-card">
 
 
-            <div class="project-content">
-
-                <h3>
-                    E-Commerce Retail
-                    Sales Performance Analytics
-                </h3>
+                <img
+                    class="project-image"
+                    src="images/ecommerce-sales.png"
+                    alt="E-Commerce Sales Dashboard">
 
 
-                <p>
-
-                    Sales performance analysis using
-                    SQL Server, Excel and Power Pivot
-                    to evaluate sales, profitability,
-                    customers and products.
-
-                </p>
+                <div class="project-content">
 
 
-                <div class="tools">
+                    <h3>
 
-                    SQL Server • Excel • Power Pivot
+                        E-Commerce Retail
+                        Sales Performance Analytics
 
-                </div>
-
-
-                <div class="buttons">
-
-                    <a
-                        href="projects/ecommerce-sales.html"
-                        class="button">
-
-                        Interactive Project →
-
-                    </a>
+                    </h3>
 
 
-                    <a
-                        href="YOUR-ECOMMERCE-GITHUB-REPOSITORY"
-                        class="button github-button"
-                        target="_blank"
-                        rel="noopener">
+                    <p>
 
-                        GitHub
+                        Sales performance analysis using
+                        SQL Server, Excel and Power Pivot
+                        to evaluate sales, profitability,
+                        customers and products.
 
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
+                    </p>
 
 
-        <!-- =========================
-             PROJECT 3
-        ========================= -->
+                    <div class="tools">
 
-        <div class="project-card">
+                        SQL Server • Excel •
+                        Power Pivot
 
-
-            <img
-                class="project-image"
-                src="https://via.placeholder.com/800x450?text=Inventory+Forecasting"
-                alt="Inventory Demand Forecasting Dashboard">
+                    </div>
 
 
-            <div class="project-content">
-
-                <h3>
-                    Retail Inventory &
-                    Demand Forecasting
-                </h3>
+                    <div class="buttons">
 
 
-                <p>
+                        <a
+                            href="projects/ecommerce-sales.html"
+                            class="button">
 
-                    Inventory and demand analysis
-                    focused on sales, stock levels,
-                    shortages, forecasting and
-                    inventory performance.
+                            Interactive Project →
 
-                </p>
-
-
-                <div class="tools">
-
-                    SQL Server • Power BI • Forecasting
-
-                </div>
+                        </a>
 
 
-                <div class="buttons">
+                        <a
+                            href="YOUR-ECOMMERCE-GITHUB-REPOSITORY"
+                            class="button github-button"
+                            target="_blank"
+                            rel="noopener">
 
-                    <a
-                        href="projects/retail-inventory.html"
-                        class="button">
+                            GitHub
 
-                        Interactive Project →
-
-                    </a>
+                        </a>
 
 
-                    <a
-                        href="YOUR-INVENTORY-GITHUB-REPOSITORY"
-                        class="button github-button"
-                        target="_blank"
-                        rel="noopener">
-
-                        GitHub
-
-                    </a>
+                    </div>
 
                 </div>
 
             </div>
 
+
+
+            <!-- =========================
+                 PROJECT 3
+            ========================= -->
+
+            <div class="project-card">
+
+
+                <img
+                    class="project-image"
+                    src="images/retail-inventory.png"
+                    alt="Inventory Demand Forecasting Dashboard">
+
+
+                <div class="project-content">
+
+
+                    <h3>
+
+                        Retail Inventory &
+                        Demand Forecasting
+
+                    </h3>
+
+
+                    <p>
+
+                        Inventory and demand analysis
+                        focused on sales, stock levels,
+                        shortages, forecasting and
+                        inventory performance.
+
+                    </p>
+
+
+                    <div class="tools">
+
+                        SQL Server • Power BI •
+                        Demand Forecasting
+
+                    </div>
+
+
+                    <div class="buttons">
+
+
+                        <a
+                            href="projects/retail-inventory.html"
+                            class="button">
+
+                            Interactive Project →
+
+                        </a>
+
+
+                        <a
+                            href="YOUR-INVENTORY-GITHUB-REPOSITORY"
+                            class="button github-button"
+                            target="_blank"
+                            rel="noopener">
+
+                            GitHub
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
         </div>
 
+    </section>
 
-    </div>
 
 
     <!-- =========================
@@ -894,6 +906,7 @@
     </section>
 
 
+
     <!-- =========================
          CONTACT
     ========================= -->
@@ -918,23 +931,23 @@
 
 
         <a
-            href="https://www.linkedin.com/"
+            href="https://github.com/youssefabdelwadoud2-stack"
             class="button"
             target="_blank"
             rel="noopener">
 
-            LinkedIn
+            GitHub
 
         </a>
 
 
         <a
-            href="https://github.com/youssefabdelwadoud2-stack"
+            href="https://www.linkedin.com/"
             class="button github-button"
             target="_blank"
             rel="noopener">
 
-            GitHub
+            LinkedIn
 
         </a>
 
@@ -945,13 +958,15 @@
 </div>
 
 
+
 <!-- =========================
      FOOTER
 ========================= -->
 
 <footer>
 
-    Data Analytics Portfolio — Youssef Abdelwadoud
+    Data Analytics Portfolio —
+    Youssef Abdelwadoud
 
     <br>
 
