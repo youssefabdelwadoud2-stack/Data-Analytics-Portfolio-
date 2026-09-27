@@ -2,35 +2,21 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>
-        Youssef Abdelwadoud | Data Analytics Portfolio
-    </title>
-
+    <title>Youssef Abdelwadoud | Data Analytics Portfolio</title>
 
     <style>
-
-        /* =========================
-           GLOBAL
-        ========================= */
-
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
-
         html {
             scroll-behavior: smooth;
         }
-
 
         body {
             font-family: Arial, sans-serif;
@@ -38,7 +24,6 @@
             color: #1f2937;
             line-height: 1.6;
         }
-
 
         /* =========================
            NAVIGATION
@@ -52,16 +37,13 @@
             z-index: 1000;
         }
 
-
         .nav-container {
             max-width: 1200px;
             margin: auto;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
 
         .logo {
             color: white;
@@ -70,13 +52,11 @@
             text-decoration: none;
         }
 
-
         .nav-links {
             display: flex;
             gap: 25px;
             list-style: none;
         }
-
 
         .nav-links a {
             color: #d1d5db;
@@ -85,11 +65,9 @@
             transition: color 0.2s;
         }
 
-
         .nav-links a:hover {
             color: white;
         }
-
 
         /* =========================
            HERO
@@ -102,12 +80,10 @@
             text-align: center;
         }
 
-
         header h1 {
             font-size: 42px;
             margin-bottom: 12px;
         }
-
 
         header h2 {
             font-size: 30px;
@@ -116,39 +92,29 @@
             margin-bottom: 15px;
         }
 
-
         header p {
             font-size: 18px;
             color: #d1d5db;
             margin-bottom: 25px;
         }
 
-
         .hero-button {
             display: inline-block;
-
             background: #2563eb;
             color: white;
-
             text-decoration: none;
-
             padding: 12px 22px;
-
             border-radius: 7px;
-
             font-weight: bold;
-
             transition: background 0.2s;
         }
-
 
         .hero-button:hover {
             background: #1d4ed8;
         }
 
-
         /* =========================
-           MAIN CONTAINER
+           GENERAL CONTAINER
         ========================= */
 
         .container {
@@ -157,173 +123,111 @@
             padding: 0 20px;
         }
 
-
-        /* =========================
-           SECTION TITLE
-        ========================= */
-
         .section-title {
             text-align: center;
             margin-bottom: 35px;
         }
-
 
         .section-title h2 {
             font-size: 30px;
             margin-bottom: 10px;
         }
 
-
         .section-title p {
             color: #6b7280;
         }
 
-
         /* =========================
-           PROJECT GRID
+           PROJECTS
         ========================= */
 
         .projects {
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
+            grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
 
-
-        /* =========================
-           PROJECT CARD
-        ========================= */
-
         .project-card {
             background: white;
-
             border-radius: 12px;
-
             overflow: hidden;
-
-            box-shadow:
-                0 5px 20px rgba(0, 0, 0, 0.08);
-
-            transition:
-                transform 0.2s,
-                box-shadow 0.2s;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-
 
         .project-card:hover {
             transform: translateY(-5px);
-
-            box-shadow:
-                0 10px 30px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
         }
 
-
         /* =========================
-           PROJECT IMAGE
+           PROJECT IMAGES
         ========================= */
 
         .project-image {
             width: 100%;
-
             height: 210px;
-
             object-fit: cover;
-
             display: block;
-
             background: #e5e7eb;
         }
-
-
-        /* =========================
-           PROJECT CONTENT
-        ========================= */
 
         .project-content {
             padding: 25px;
         }
 
-
         .project-card h3 {
             margin-bottom: 12px;
-
             font-size: 21px;
-
             line-height: 1.4;
         }
 
-
         .project-card p {
             color: #6b7280;
-
             line-height: 1.6;
-
             margin-bottom: 15px;
         }
 
-
         .tools {
             font-size: 14px;
-
             font-weight: bold;
-
             color: #2563eb;
-
             margin-bottom: 20px;
         }
 
-
         /* =========================
-           PROJECT BUTTONS
+           BUTTONS
         ========================= */
 
         .buttons {
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 10px;
         }
 
-
         .button {
             display: inline-block;
-
             text-decoration: none;
-
             background: #2563eb;
-
             color: white;
-
             padding: 10px 15px;
-
             border-radius: 7px;
-
             font-size: 13px;
-
             font-weight: bold;
-
             transition: background 0.2s;
         }
-
 
         .button:hover {
             background: #1d4ed8;
         }
 
-
         .github-button {
             background: #374151;
         }
 
-
         .github-button:hover {
             background: #1f2937;
         }
-
 
         /* =========================
            ABOUT
@@ -331,31 +235,21 @@
 
         .about {
             background: white;
-
             border-radius: 12px;
-
             padding: 30px;
-
             margin-top: 60px;
-
-            box-shadow:
-                0 5px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
         }
-
 
         .about h2 {
             margin-bottom: 15px;
-
             font-size: 28px;
         }
 
-
         .about p {
             color: #6b7280;
-
             line-height: 1.8;
         }
-
 
         /* =========================
            CONTACT
@@ -363,31 +257,21 @@
 
         .contact {
             text-align: center;
-
             margin-top: 60px;
-
             padding: 40px 20px;
-
             background: white;
-
             border-radius: 12px;
-
-            box-shadow:
-                0 5px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
         }
-
 
         .contact h2 {
             margin-bottom: 12px;
         }
 
-
         .contact p {
             color: #6b7280;
-
             margin-bottom: 20px;
         }
-
 
         /* =========================
            FOOTER
@@ -395,30 +279,21 @@
 
         footer {
             text-align: center;
-
             padding: 35px;
-
             margin-top: 60px;
-
             background: #111827;
-
             color: #d1d5db;
-
             line-height: 2;
         }
 
-
         footer a {
             color: #93c5fd;
-
             text-decoration: none;
         }
-
 
         footer a:hover {
             text-decoration: underline;
         }
-
 
         /* =========================
            TABLET
@@ -427,12 +302,10 @@
         @media (max-width: 900px) {
 
             .projects {
-                grid-template-columns:
-                    repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
 
         }
-
 
         /* =========================
            MOBILE
@@ -444,535 +317,392 @@
                 padding: 15px;
             }
 
-
             .nav-container {
                 flex-direction: column;
-
                 gap: 12px;
             }
 
-
             .nav-links {
                 gap: 15px;
-
                 flex-wrap: wrap;
-
                 justify-content: center;
             }
-
 
             header {
                 padding: 60px 15px;
             }
 
-
             header h1 {
                 font-size: 32px;
             }
-
 
             header h2 {
                 font-size: 24px;
             }
 
-
             header p {
                 font-size: 16px;
             }
 
-
             .container {
                 margin: 40px auto;
-
                 padding: 0 15px;
             }
-
 
             .projects {
                 grid-template-columns: 1fr;
             }
 
-
             .project-image {
                 height: 220px;
             }
-
 
             .project-content {
                 padding: 20px;
             }
 
-
             .buttons {
                 flex-direction: column;
             }
 
-
             .button {
                 text-align: center;
-
                 width: 100%;
             }
-
         }
 
     </style>
-
 </head>
 
 
 <body>
 
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+    <nav>
 
-<nav>
+        <div class="nav-container">
 
-    <div class="nav-container">
+            <a href="index.html" class="logo">
+                Youssef Abdelwadoud
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
 
 
-        <a
-            href="index.html"
-            class="logo">
+    <!-- =========================
+         HERO SECTION
+    ========================= -->
 
+    <header id="home">
+
+        <h1>
             Youssef Abdelwadoud
+        </h1>
 
+        <h2>
+            Data Analytics Portfolio
+        </h2>
+
+        <p>
+            SQL | Power BI | Tableau | Excel
+        </p>
+
+        <a href="#projects" class="hero-button">
+            Explore My Projects
         </a>
 
-
-        <ul class="nav-links">
-
-
-            <li>
-
-                <a href="#home">
-                    Home
-                </a>
-
-            </li>
+    </header>
 
 
-            <li>
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
 
-                <a href="#projects">
-                    Projects
-                </a>
-
-            </li>
+    <div class="container">
 
 
-            <li>
+        <!-- =========================
+             PROJECTS SECTION
+        ========================= -->
 
-                <a href="#about">
-                    About
-                </a>
+        <section id="projects">
 
-            </li>
+            <div class="section-title">
+
+                <h2>
+                    Featured Projects
+                </h2>
+
+                <p>
+                    Interactive Data Analytics Projects
+                </p>
+
+            </div>
 
 
-            <li>
-
-                <a href="#contact">
-                    Contact
-                </a>
-
-            </li>
+            <div class="projects">
 
 
-        </ul>
+                <!-- =========================
+                     PROJECT 1
+                ========================= -->
+
+                <div class="project-card">
+
+                    <img
+                        class="project-image"
+                        src="images/customer-analytics.png.jpg"
+                        alt="Customer Analytics Dashboard"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>
+                            Customer Analytics, Segmentation & Retention
+                        </h3>
+
+                        <p>
+                            Customer analytics project analyzing segmentation,
+                            churn, retention, customer value and engagement.
+                        </p>
+
+                        <div class="tools">
+                            SQL Server • Tableau • Customer Analytics
+                        </div>
+
+                        <div class="buttons">
+
+                            <a
+                                href="projects/customer-analytics.html"
+                                class="button"
+                            >
+                                Interactive Project →
+                            </a>
+
+                            <a
+                                href="YOUR-CUSTOMER-GITHUB-REPOSITORY"
+                                class="button github-button"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     PROJECT 2
+                ========================= -->
+
+                <div class="project-card">
+
+                    <img
+                        class="project-image"
+                        src="images/ecommerce-sales.png.jpg"
+                        alt="E-Commerce Sales Dashboard"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>
+                            E-Commerce Retail Sales Performance Analytics
+                        </h3>
+
+                        <p>
+                            Sales performance analysis using SQL Server,
+                            Excel and Power Pivot to evaluate sales,
+                            profitability, customers and products.
+                        </p>
+
+                        <div class="tools">
+                            SQL Server • Excel • Power Pivot
+                        </div>
+
+                        <div class="buttons">
+
+                            <a
+                                href="projects/ecommerce-sales.html"
+                                class="button"
+                            >
+                                Interactive Project →
+                            </a>
+
+                            <a
+                                href="YOUR-ECOMMERCE-GITHUB-REPOSITORY"
+                                class="button github-button"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     PROJECT 3
+                ========================= -->
+
+                <div class="project-card">
+
+                    <img
+                        class="project-image"
+                        src="images/retail-inventory.png.jpg"
+                        alt="Inventory Demand Forecasting Dashboard"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>
+                            Retail Inventory & Demand Forecasting
+                        </h3>
+
+                        <p>
+                            Inventory and demand analysis focused on sales,
+                            stock levels, shortages, forecasting and
+                            inventory performance.
+                        </p>
+
+                        <div class="tools">
+                            SQL Server • Power BI • Demand Forecasting
+                        </div>
+
+                        <div class="buttons">
+
+                            <a
+                                href="projects/retail-inventory.html"
+                                class="button"
+                            >
+                                Interactive Project →
+                            </a>
+
+                            <a
+                                href="YOUR-INVENTORY-GITHUB-REPOSITORY"
+                                class="button github-button"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================= -->
+
+        <section class="about" id="about">
+
+            <h2>
+                About Me
+            </h2>
+
+            <p>
+                I am a Data Analyst focused on transforming business data
+                into meaningful insights. My projects combine SQL,
+                Power BI, Tableau and Excel to analyze business performance,
+                customer behavior, sales and operational data.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT SECTION
+        ========================= -->
+
+        <section class="contact" id="contact">
+
+            <h2>
+                Let's Connect
+            </h2>
+
+            <p>
+                Interested in discussing data analytics,
+                business intelligence or potential opportunities?
+            </p>
+
+            <a
+                href="https://github.com/youssefabdelwadoud2-stack"
+                class="button"
+                target="_blank"
+                rel="noopener"
+            >
+                GitHub
+            </a>
+
+            <a
+                href="https://www.linkedin.com/"
+                class="button github-button"
+                target="_blank"
+                rel="noopener"
+            >
+                LinkedIn
+            </a>
+
+        </section>
+
 
     </div>
 
-</nav>
-
-
-
-<!-- =========================
-     HERO
-========================= -->
-
-<header id="home">
-
-
-    <h1>
-        Youssef Abdelwadoud
-    </h1>
-
-
-    <h2>
-        Data Analytics Portfolio
-    </h2>
-
-
-    <p>
-        SQL | Power BI | Tableau | Excel
-    </p>
-
-
-    <a
-        href="#projects"
-        class="hero-button">
-
-        Explore My Projects
-
-    </a>
-
-
-</header>
-
-
-
-<!-- =========================
-     MAIN
-========================= -->
-
-<div class="container">
-
 
     <!-- =========================
-         PROJECTS
+         FOOTER
     ========================= -->
 
-    <section id="projects">
+    <footer>
 
+        Data Analytics Portfolio — Youssef Abdelwadoud
 
-        <div class="section-title">
+        <br>
 
-            <h2>
-                Featured Projects
-            </h2>
+        SQL • Power BI • Tableau • Excel
 
-
-            <p>
-                Interactive Data Analytics Projects
-            </p>
-
-        </div>
-
-
-
-        <div class="projects">
-
-
-            <!-- =========================
-                 PROJECT 1
-            ========================= -->
-
-            <div class="project-card">
-
-
-                <img
-                    class="project-image"
-                    src="images/customer-analytics.png"
-                    alt="Customer Analytics Dashboard">
-
-
-                <div class="project-content">
-
-
-                    <h3>
-                        Customer Analytics,
-                        Segmentation & Retention
-                    </h3>
-
-
-                    <p>
-
-                        Customer analytics project analyzing
-                        segmentation, churn, retention,
-                        customer value and engagement.
-
-                    </p>
-
-
-                    <div class="tools">
-
-                        SQL Server • Tableau •
-                        Customer Analytics
-
-                    </div>
-
-
-                    <div class="buttons">
-
-
-                        <a
-                            href="projects/customer-analytics.html"
-                            class="button">
-
-                            Interactive Project →
-
-                        </a>
-
-
-                        <a
-                            href="YOUR-CUSTOMER-GITHUB-REPOSITORY"
-                            class="button github-button"
-                            target="_blank"
-                            rel="noopener">
-
-                            GitHub
-
-                        </a>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =========================
-                 PROJECT 2
-            ========================= -->
-
-            <div class="project-card">
-
-
-                <img
-                    class="project-image"
-                    src="images/ecommerce-sales.png"
-                    alt="E-Commerce Sales Dashboard">
-
-
-                <div class="project-content">
-
-
-                    <h3>
-
-                        E-Commerce Retail
-                        Sales Performance Analytics
-
-                    </h3>
-
-
-                    <p>
-
-                        Sales performance analysis using
-                        SQL Server, Excel and Power Pivot
-                        to evaluate sales, profitability,
-                        customers and products.
-
-                    </p>
-
-
-                    <div class="tools">
-
-                        SQL Server • Excel •
-                        Power Pivot
-
-                    </div>
-
-
-                    <div class="buttons">
-
-
-                        <a
-                            href="projects/ecommerce-sales.html"
-                            class="button">
-
-                            Interactive Project →
-
-                        </a>
-
-
-                        <a
-                            href="YOUR-ECOMMERCE-GITHUB-REPOSITORY"
-                            class="button github-button"
-                            target="_blank"
-                            rel="noopener">
-
-                            GitHub
-
-                        </a>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =========================
-                 PROJECT 3
-            ========================= -->
-
-            <div class="project-card">
-
-
-                <img
-                    class="project-image"
-                    src="images/retail-inventory.png"
-                    alt="Inventory Demand Forecasting Dashboard">
-
-
-                <div class="project-content">
-
-
-                    <h3>
-
-                        Retail Inventory &
-                        Demand Forecasting
-
-                    </h3>
-
-
-                    <p>
-
-                        Inventory and demand analysis
-                        focused on sales, stock levels,
-                        shortages, forecasting and
-                        inventory performance.
-
-                    </p>
-
-
-                    <div class="tools">
-
-                        SQL Server • Power BI •
-                        Demand Forecasting
-
-                    </div>
-
-
-                    <div class="buttons">
-
-
-                        <a
-                            href="projects/retail-inventory.html"
-                            class="button">
-
-                            Interactive Project →
-
-                        </a>
-
-
-                        <a
-                            href="YOUR-INVENTORY-GITHUB-REPOSITORY"
-                            class="button github-button"
-                            target="_blank"
-                            rel="noopener">
-
-                            GitHub
-
-                        </a>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         ABOUT
-    ========================= -->
-
-    <section
-        class="about"
-        id="about">
-
-
-        <h2>
-            About Me
-        </h2>
-
-
-        <p>
-
-            I am a Data Analyst focused on transforming
-            business data into meaningful insights.
-
-            My projects combine SQL, Power BI, Tableau
-            and Excel to analyze business performance,
-            customer behavior, sales and operational data.
-
-        </p>
-
-
-    </section>
-
-
-
-    <!-- =========================
-         CONTACT
-    ========================= -->
-
-    <section
-        class="contact"
-        id="contact">
-
-
-        <h2>
-            Let's Connect
-        </h2>
-
-
-        <p>
-
-            Interested in discussing data analytics,
-            business intelligence or potential
-            opportunities?
-
-        </p>
-
-
-        <a
-            href="https://github.com/youssefabdelwadoud2-stack"
-            class="button"
-            target="_blank"
-            rel="noopener">
-
-            GitHub
-
-        </a>
-
-
-        <a
-            href="https://www.linkedin.com/"
-            class="button github-button"
-            target="_blank"
-            rel="noopener">
-
-            LinkedIn
-
-        </a>
-
-
-    </section>
-
-
-</div>
-
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-    Data Analytics Portfolio —
-    Youssef Abdelwadoud
-
-    <br>
-
-    SQL • Power BI • Tableau • Excel
-
-</footer>
+    </footer>
 
 
 </body>
