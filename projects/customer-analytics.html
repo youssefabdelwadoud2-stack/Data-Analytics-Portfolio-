@@ -1,20 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>
-        Customer Analytics Segmentation And Retention
-    </title>
+    <title>Customer Analytics | Youssef Abdelwadoud</title>
 
     <style>
-
         * {
             box-sizing: border-box;
             margin: 0;
@@ -35,69 +28,122 @@
         }
 
         header h1 {
-            font-size: 38px;
+            font-size: 36px;
             margin-bottom: 12px;
         }
 
         header p {
-            font-size: 18px;
+            font-size: 16px;
             color: #d1d5db;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 1200px;
-            margin: 45px auto;
+            max-width: 1400px;
+            margin: 40px auto;
             padding: 0 20px;
         }
 
-        .project-info {
+        .project-info,
+        .dashboard-section {
             background: white;
             border-radius: 12px;
-            padding: 30px;
+            padding: 28px;
             margin-bottom: 30px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
-        .project-info h2 {
-            font-size: 26px;
+        .project-info h2,
+        .dashboard-section h2 {
+            font-size: 25px;
             margin-bottom: 15px;
+            color: #111827;
         }
 
         .project-info p {
             color: #6b7280;
-            line-height: 1.7;
-            margin-bottom: 15px;
+            line-height: 1.8;
+            margin-bottom: 12px;
         }
 
         .tools {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: bold;
+            color: #2563eb;
             margin-top: 15px;
         }
 
+        /* Tableau Dashboard */
+
         .dashboard-section {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            padding: 24px;
         }
 
-        .dashboard-section h2 {
-            font-size: 26px;
+        .dashboard-description {
+            color: #6b7280;
+            line-height: 1.6;
             margin-bottom: 20px;
         }
 
-        .dashboard-placeholder {
-            min-height: 500px;
-            border: 2px dashed #d1d5db;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+        .dashboard-container {
+            width: 100%;
+            min-height: 600px;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #ffffff;
+        }
+
+        .tableauPlaceholder {
+            width: 100%;
+            position: relative;
+        }
+
+        .tableauPlaceholder object {
+            width: 100%;
+            display: block;
+        }
+
+        .tableau-fallback {
             padding: 30px;
+            text-align: center;
             color: #6b7280;
-            font-size: 18px;
+        }
+
+        .tableau-fallback a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .dashboard-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        .secondary-button {
+            background: #374151;
+        }
+
+        .secondary-button:hover {
+            background: #1f2937;
         }
 
         .back-button {
@@ -105,9 +151,9 @@
             text-decoration: none;
             background: #2563eb;
             color: white;
-            padding: 11px 18px;
+            padding: 12px 20px;
             border-radius: 7px;
-            margin-top: 30px;
+            margin: 5px 0 20px;
         }
 
         .back-button:hover {
@@ -116,106 +162,229 @@
 
         footer {
             text-align: center;
-            padding: 35px;
-            margin-top: 50px;
+            padding: 30px;
+            margin-top: 40px;
             background: #111827;
             color: #d1d5db;
+            line-height: 2;
         }
 
-        @media (max-width: 600px) {
+        footer a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 15px;
+            }
 
             header h1 {
-                font-size: 30px;
+                font-size: 28px;
             }
 
             .container {
-                margin-top: 30px;
+                margin: 25px auto;
+                padding: 0 12px;
             }
 
+            .project-info,
+            .dashboard-section {
+                padding: 18px;
+            }
+
+            .project-info h2,
+            .dashboard-section h2 {
+                font-size: 21px;
+            }
+
+            .dashboard-container {
+                min-height: 450px;
+            }
         }
-
     </style>
-
 </head>
 
 <body>
 
-
 <header>
-
-    <h1>
-        Customer Analytics Segmentation And Retention
-    </h1>
-
+    <h1>Customer Analytics</h1>
     <p>
-        SQL Server • Tableau • Customer Analytics
+        SQL Server | Tableau | Customer Segmentation |
+        Churn & Retention Analysis
     </p>
-
 </header>
-
 
 <div class="container">
 
+    <!-- Project Overview -->
 
-    <div class="project-info">
-
-        <h2>
-            Project Overview
-        </h2>
+    <section class="project-info">
+        <h2>Project Overview</h2>
 
         <p>
-            A Full Business Analytics Project Using SQL Server
-            Connected With Tableau.
+            This project focuses on customer analytics,
+            segmentation, churn, and retention using SQL Server
+            and Tableau.
         </p>
 
         <p>
-            This project focuses on customer segmentation,
-            customer behavior, churn analysis, retention analysis,
-            and identifying customers who may be at risk of churn.
+            The interactive dashboards provide insights into
+            customer behavior, customer value, engagement,
+            and retention patterns to support data-driven
+            business decisions.
         </p>
 
         <div class="tools">
-            SQL • Tableau • Customer Analytics
+            SQL Server • Tableau • Customer Analytics
+        </div>
+    </section>
+
+    <!-- Interactive Dashboard -->
+
+    <section class="dashboard-section">
+
+        <h2>Interactive Tableau Dashboard</h2>
+
+        <p class="dashboard-description">
+            Explore customer segmentation, retention,
+            churn, and customer behavior using the
+            interactive dashboard below.
+        </p>
+
+        <div class="dashboard-container">
+
+            <div
+                class="tableauPlaceholder"
+                id="viz1790529156639">
+
+                <noscript>
+                    <a href="https://public.tableau.com/views/CustomerAnalyticsSegmentationAndRetention__/OvarView1">
+                        <img
+                            alt="Customer Segmentation Overview"
+                            src="https://public.tableau.com/static/images/Cu/CustomerAnalyticsSegmentationAndRetention__/OvarView1/1.png"
+                            style="border: none; width: 100%;">
+                    </a>
+                </noscript>
+
+                <object class="tableauViz" style="display:none;">
+
+                    <param name="host_url"
+                        value="https%3A%2F%2Fpublic.tableau.com%2F">
+
+                    <param name="embed_code_version" value="3">
+
+                    <param name="site_root" value="">
+
+                    <param name="name"
+                        value="CustomerAnalyticsSegmentationAndRetention__/OvarView1">
+
+                    <param name="tabs" value="no">
+
+                    <param name="toolbar" value="yes">
+
+                    <param name="static_image"
+                        value="https://public.tableau.com/static/images/Cu/CustomerAnalyticsSegmentationAndRetention__/OvarView1/1.png">
+
+                    <param name="animate_transition" value="yes">
+
+                    <param name="display_static_image" value="yes">
+
+                    <param name="display_spinner" value="yes">
+
+                    <param name="display_overlay" value="yes">
+
+                    <param name="display_count" value="yes">
+
+                    <param name="language" value="en-US">
+
+                </object>
+            </div>
         </div>
 
-    </div>
+        <div class="dashboard-actions">
 
-
-    <div class="dashboard-section">
-
-        <h2>
-            Interactive Dashboard
-        </h2>
-
-        <div class="dashboard-placeholder">
-
-            <p>
-                Tableau interactive dashboard will be embedded here.
-            </p>
+            <a
+                href="https://public.tableau.com/views/CustomerAnalyticsSegmentationAndRetention__/OvarView1"
+                class="button"
+                target="_blank"
+                rel="noopener">
+                Open on Tableau Public ↗
+            </a>
 
         </div>
 
-        <a
-            href="../index.html"
-            class="back-button">
+    </section>
 
-            ← Back to Portfolio
-
-        </a>
-
-    </div>
-
+    <a href="../index.html" class="back-button">
+        ← Back to Portfolio
+    </a>
 
 </div>
 
-
 <footer>
-
     Data Analytics Portfolio — Youssef Abdelwadoud
-
+    <br>
+    <a href="https://github.com/youssefabdelwadoud2-stack"
+       target="_blank" rel="noopener">GitHub</a>
+    ·
+    <a href="https://www.linkedin.com/"
+       target="_blank" rel="noopener">LinkedIn</a>
 </footer>
 
+<!-- Tableau JavaScript API -->
+
+<script type="text/javascript">
+    (function () {
+        var divElement = document.getElementById(
+            'viz1790529156639'
+        );
+
+        var vizElement =
+            divElement.getElementsByTagName('object')[0];
+
+        var container =
+            divElement.parentElement;
+
+        function resizeTableau() {
+            var width = container.clientWidth;
+
+            if (width <= 0) {
+                return;
+            }
+
+            vizElement.style.width = width + 'px';
+
+            // Keep the original dashboard's aspect ratio
+            var height = Math.round(width * 997 / 1657);
+
+            // Avoid an excessively short dashboard on mobile
+            height = Math.max(height, 600);
+
+            vizElement.style.height = height + 'px';
+        }
+
+        resizeTableau();
+
+        window.addEventListener('resize', resizeTableau);
+
+        var scriptElement = document.createElement('script');
+
+        scriptElement.src =
+            'https://public.tableau.com/javascripts/api/viz_v1.js';
+
+        scriptElement.onload = resizeTableau;
+
+        vizElement.parentNode.insertBefore(
+            scriptElement,
+            vizElement
+        );
+    })();
+</script>
 
 </body>
-
 </html>
