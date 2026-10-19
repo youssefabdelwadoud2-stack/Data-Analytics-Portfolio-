@@ -57,7 +57,24 @@ h2{font-size:21px}
 .video-placeholder{padding:30px 15px}
 }
 @media(max-width:400px){header h1{font-size:24px}}
-</style>
+video-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 24px auto;
+    aspect-ratio: 16 / 9;
+    background: #111827;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 </head>
 <body>
 
@@ -188,15 +205,27 @@ Interactive embedding will be added after the public Power BI publishing setup i
 </div>
 </section>
 
+
 <section class="content-section">
-<h2>Project Walkthrough</h2>
-<p class="section-description">A short video explaining the business problem, inventory data, demand analysis and dashboard insights will be added here.</p>
-<div class="video-placeholder">
-<div class="video-icon">▶</div>
-<h3>Project Walkthrough — Coming Soon</h3>
-<p>Video walkthrough will be available here in a future update.</p>
-</div>
+    <h2>Project Walkthrough</h2>
+
+    <p class="section-description">
+        Watch the project walkthrough to explore the inventory data,
+        demand analysis, and key dashboard insights.
+    </p>
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/ZX2eg8Yj9Jk"
+            title="Retail Store Inventory and Demand Forecasting Project"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+    </div>
 </section>
+
 
 <a href="../index.html" class="back-button">← Back to Portfolio</a>
 </main>
