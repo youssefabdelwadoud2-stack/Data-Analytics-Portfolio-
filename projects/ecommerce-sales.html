@@ -61,6 +61,25 @@ h2{font-size:21px}
 header h1{font-size:24px}
 .dashboard-container iframe{height:600px}
 }
+ 
+.video-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 24px auto;
+    aspect-ratio: 16 / 9;
+    background: #111827;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 </style>
 </head>
 <body>
@@ -194,19 +213,29 @@ allowfullscreen>
 
 
 
-
- 
 <section class="content-section">
-<h2>Project Walkthrough</h2>
-<p class="section-description">A short video explaining the business problem, data preparation, sales analysis and dashboard results will be added here.</p>
-<div class="video-placeholder">
-<div class="video-icon">▶</div>
-<h3>Project Walkthrough — Coming Soon</h3>
-<p>Video walkthrough will be available here in a future update.</p>
-</div>
+    <h2>Project Walkthrough</h2>
+
+    <p class="section-description">
+        Watch the project walkthrough to explore the sales performance
+        analysis, profitability, customer insights, product performance,
+        and the interactive Excel dashboard.
+    </p>
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/tbih8O3vX9U"
+            title="E-Commerce Retail Sales Performance Analytics Project"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+    </div>
 </section>
 
 
+ 
  
 
  
